@@ -1,0 +1,147 @@
+link_list_with_description = { members[
+    { link: https://w0.peakpx.com/wallpaper/10/388/HD-wallpaper-gojo-satoru-jjk-jujutsu-anime-husbando-gojo-satoru-jujutsu-kaisen-thumbnail.jpg,
+    description: gojo satoru}
+
+    {
+        link: https://w0.peakpx.com/wallpaper/715/727/HD-wallpaper-yuji-itadori-jjk-anime-thumbnail.jpg
+        description: yuji itadori
+    }
+
+    {
+        link: https://w0.peakpx.com/wallpaper/493/161/HD-wallpaper-gojo-gojo-satoru-jujutsu-kaisen-jjk-jjk-thumbnail.jpg
+        ...
+    }
+
+    {
+        https://w0.peakpx.com/wallpaper/89/326/HD-wallpaper-sung-jin-woo-sololeveling-sung-jin-woo-thumbnail.jpg
+        ...
+    }
+
+    https://w0.peakpx.com/wallpaper/685/696/HD-wallpaper-sung-jin-woo-digital-manhwa-webtoon-sl-solo-hearts-sololeveling-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/239/853/HD-wallpaper-my-hero-academia-anime-bakugo-deku-fight-japan-my-hero-academia-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/532/619/HD-wallpaper-dabi-my-hero-academia-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/126/956/HD-wallpaper-deku-artist-stapizz-deku-317-my-hero-academia-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/79/291/HD-wallpaper-my-hero-academia-uraraka-deku-lemollion-boku-no-hero-academia-mha-krishmia-manga-bnha-my-hero-academia-anime-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/970/979/HD-wallpaper-my-hero-academia-deku-mha-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/928/744/HD-wallpaper-bakugo-art-my-hero-academia-anime-bakugou-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/417/882/HD-wallpaper-himiko-toga-my-hero-academia-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/207/593/HD-wallpaper-all-migth-academia-anime-boku-deku-hero-my-no-thumbnail.jpg
+
+    https://w0.peakpx.com/wallpaper/531/871/HD-wallpaper-ryomen-sukuna-domain-expansion-art-fictional-character-cool-wallaper-fanart-iphone-anime-gojo-satoru-jujutsu-kaisen-android-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/782/853/HD-wallpaper-domain-expansion-bl-anime-black-and-white-gojo-gojo-satori-gojo-sensei-jujutsu-kaisen-simp-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/878/103/HD-wallpaper-attack-on-titan-aot-attack-on-titan-eren-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/483/153/HD-wallpaper-armored-and-attack-t-attack-titan-armored-titan-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/338/215/HD-wallpaper-eren-aot-attack-on-titan-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/633/540/HD-wallpaper-attack-on-titans-aot-armin-attack-titan-colossal-titan-eren-yeager-levi-mikasa-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/524/963/HD-wallpaper-levi-ackerman-attack-on-titan-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/599/734/HD-wallpaper-one-piece-one-piece-anime-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/496/428/HD-wallpaper-one-piece-luffy-anime-monkey-d-luffy-one-piece-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/229/806/HD-wallpaper-one-piece-gear-5-one-piece-monkey-d-luffy-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/399/672/HD-wallpaper-one-piece-zoro-anime-one-piece-zoro-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/90/737/HD-wallpaper-roronoa-zoro-hypebeast-katana-zoro-one-piece-one-piece-fanart-one-piece-samurai-anime-luffy-one-piece-zoro-fanart-thumbnail.jpg
+    https://w0.peakpx.com/wallpaper/406/172/HD-wallpaper-luffy-one-piece-thumbnail.jpg
+]}
+
+Component {
+
+     <div class="relative overflow-hidden rounded-md cursor-pointer group">
+    <img src="https://source.unsplash.com/8n7ipHhI8CI" />
+    <div class="absolute inset-0 transition duration-300 opacity-0 group-hover:opacity-100">
+      <div class="absolute inset-0 bg-black pointer-events-none opacity-30"></div>
+      <div class="absolute inset-0 flex flex-col p-8">
+        <button class="px-8 py-2 mr-auto text-sm font-bold text-white bg-red-500 rounded-full">Share</button>
+        <div class="relative z-10 mt-auto text-lg font-semibold text-white break-words">Woman in white dress shirt holding red flower during daytime.</div>
+      </div>
+    </div>
+  </div>
+}
+
+
+
+
+
+
+
+<div
+          x-data="{ members: [
+          { link: 'https://w0.peakpx.com/wallpaper/10/388/HD-wallpaper-gojo-satoru-jjk-jujutsu-anime-husbando-gojo-satoru-jujutsu-kaisen-thumbnail.jpg', description: 'Gojo Satoru' },
+          { link: 'https://w0.peakpx.com/wallpaper/715/727/HD-wallpaper-yuji-itadori-jjk-anime-thumbnail.jpg', description: 'Yuji Itadori' },
+          { link: 'https://w0.peakpx.com/wallpaper/493/161/HD-wallpaper-gojo-gojo-satoru-jujutsu-kaisen-jjk-jjk-thumbnail.jpg', description: 'Gojo Gojo' },
+          { link: 'https://w0.peakpx.com/wallpaper/89/326/HD-wallpaper-sung-jin-woo-sololeveling-sung-jin-woo-thumbnail.jpg', description: 'Sung Jin Woo' },
+          { link: 'https://w0.peakpx.com/wallpaper/685/696/HD-wallpaper-sung-jin-woo-digital-manhwa-webtoon-sl-solo-hearts-sololeveling-thumbnail.jpg', description: 'Solo Leveling' },
+          { link: 'https://w0.peakpx.com/wallpaper/239/853/HD-wallpaper-my-hero-academia-anime-bakugo-deku-fight-japan-my-hero-academia-thumbnail.jpg', description: 'Bakugo Deku' },
+          { link: 'https://w0.peakpx.com/wallpaper/532/619/HD-wallpaper-dabi-my-hero-academia-thumbnail.jpg', description: 'Dabi Anime' },
+          { link: 'https://w0.peakpx.com/wallpaper/126/956/HD-wallpaper-deku-artist-stapizz-deku-317-my-hero-academia-thumbnail.jpg', description: 'Deku Artist' },
+          { link: 'https://w0.peakpx.com/wallpaper/79/291/HD-wallpaper-my-hero-academia-uraraka-deku-lemollion-boku-no-hero-academia-mha-krishmia-manga-bnha-my-hero-academia-anime-thumbnail.jpg', description: 'Uraraka Deku' },
+          { link: 'https://w0.peakpx.com/wallpaper/970/979/HD-wallpaper-my-hero-academia-deku-mha-thumbnail.jpg', description: 'Deku MHA' },
+          { link: 'https://w0.peakpx.com/wallpaper/928/744/HD-wallpaper-bakugo-art-my-hero-academia-anime-bakugou-thumbnail.jpg', description: 'Bakugo Art' },
+          { link: 'https://w0.peakpx.com/wallpaper/417/882/HD-wallpaper-himiko-toga-my-hero-academia-thumbnail.jpg', description: 'Himiko Toga' },
+          { link: 'https://w0.peakpx.com/wallpaper/207/593/HD-wallpaper-all-migth-academia-anime-boku-deku-hero-my-no-thumbnail.jpg', description: 'All Might' },
+          { link: 'https://w0.peakpx.com/wallpaper/531/871/HD-wallpaper-ryomen-sukuna-domain-expansion-art-fictional-character-cool-wallaper-fanart-iphone-anime-gojo-satoru-jujutsu-kaisen-android-thumbnail.jpg', description: 'Ryomen Sukuna' },
+          { link: 'https://w0.peakpx.com/wallpaper/782/853/HD-wallpaper-domain-expansion-bl-anime-black-and-white-gojo-gojo-satori-gojo-sensei-jujutsu-kaisen-simp-thumbnail.jpg', description: 'Domain Expansion' },
+          { link: 'https://w0.peakpx.com/wallpaper/878/103/HD-wallpaper-attack-on-titan-aot-attack-on-titan-eren-thumbnail.jpg', description: 'Attack on Titan' },
+          { link: 'https://w0.peakpx.com/wallpaper/483/153/HD-wallpaper-armored-and-attack-t-attack-titan-armored-titan-thumbnail.jpg', description: 'Armored Titan' },
+          { link: 'https://w0.peakpx.com/wallpaper/338/215/HD-wallpaper-eren-aot-attack-on-titan-thumbnail.jpg', description: 'Eren Yeager' },
+          { link: 'https://w0.peakpx.com/wallpaper/633/540/HD-wallpaper-attack-on-titans-aot-armin-attack-titan-colossal-titan-eren-yeager-levi-mikasa-thumbnail.jpg', description: 'Armin Attack' },
+          { link: 'https://w0.peakpx.com/wallpaper/524/963/HD-wallpaper-levi-ackerman-attack-on-titan-thumbnail.jpg', description: 'Levi Ackerman' },
+          { link: 'https://w0.peakpx.com/wallpaper/599/734/HD-wallpaper-one-piece-one-piece-anime-thumbnail.jpg', description: 'One Piece' },
+          { link: 'https://w0.peakpx.com/wallpaper/496/428/HD-wallpaper-one-piece-luffy-anime-monkey-d-luffy-one-piece-thumbnail.jpg', description: 'Luffy Monkey' },
+          { link: 'https://w0.peakpx.com/wallpaper/229/806/HD-wallpaper-one-piece-gear-5-one-piece-monkey-d-luffy-thumbnail.jpg', description: 'Gear 5 Luffy' },
+          { link: 'https://w0.peakpx.com/wallpaper/399/672/HD-wallpaper-one-piece-zoro-anime-one-piece-zoro-thumbnail.jpg', description: 'One Piece Zoro' },
+          { link: 'https://w0.peakpx.com/wallpaper/90/737/HD-wallpaper-roronoa-zoro-hypebeast-katana-zoro-one-piece-one-piece-fanart-one-piece-samurai-anime-luffy-one-piece-zoro-fanart-thumbnail.jpg', description: 'Roronoa Zoro' },
+          { link: 'https://w0.peakpx.com/wallpaper/406/172/HD-wallpaper-luffy-one-piece-thumbnail.jpg', description: 'Luffy Anime' }
+      ] }"
+        >
+          <template x-for="(member, index) in members" :key="index">
+            <div
+              class="relative overflow-hidden rounded-md cursor-pointer group"
+            >
+              <img :src="member.link" alt="Anime Photo" />
+              <div
+                class="absolute inset-0 transition duration-300 opacity-0 group-hover:opacity-100"
+              >
+                <div
+                  class="absolute inset-0 bg-black pointer-events-none opacity-30"
+                ></div>
+                <div class="absolute inset-0 flex flex-col p-8">
+                  <button
+                    class="px-8 py-2 mr-auto text-sm font-bold text-white bg-red-500 rounded-full"
+                  >
+                    Share
+                  </button>
+                  <div
+                    class="relative z-10 mt-auto text-lg font-semibold text-white break-words"
+                    x-text="member.description"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </template>
+        </div>
+
+
+
+<div x-data="{ members: [
+    { link: 'https://w0.peakpx.com/wallpaper/10/388/HD-wallpaper-gojo-satoru-jjk-jujutsu-anime-husbando-gojo-satoru-jujutsu-kaisen-thumbnail.jpg', description: 'Gojo Satoru' },
+    // Add more members as needed
+] }">
+    <template x-for="(member, index) in members" :key="index">
+        <div class="relative w-full overflow-hidden rounded-md cursor-pointer group sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
+            <div class="pb-[100%] relative"> <!-- This div sets the aspect ratio -->
+                <img :src="member.link" alt="Anime Photo" class="absolute inset-0 object-cover w-full h-full">
+            </div>
+            <div class="absolute inset-0 transition duration-300 opacity-0 group-hover:opacity-100">
+                <div class="absolute inset-0 bg-black pointer-events-none opacity-30"></div>
+                <div class="absolute inset-0 flex flex-col p-8">
+                    <button class="px-8 py-2 mr-auto text-sm font-bold text-white bg-red-500 rounded-full">Share</button>
+                    <div class="relative z-10 mt-auto text-lg font-semibold text-white break-words" x-text="member.description"></div>
+                </div>
+            </div>
+        </div>
+    </template>
+</div>
+
+
+
+
+        

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Uchiha Clan</title>
+    <link rel="stylesheet" href="style.min.css" />
+    <link
+      id="jos-stylesheet"
+      rel="stylesheet"
+      href="https://unpkg.com/jos-animation/dist/jos.css"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+  </head>
+
+  <body x-data="{openMain: false}" class="bg-[#2d464c] scroll-smooth">
+    <section x-data=" {open1: true,  open2: false} ">
+      <!-- This is the pre-introduction element -->
+      <div
+        x-cloak
+        x-show="open1"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 scale-90"
+        x-transition:enter-end="opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100 scale-100"
+        x-transition:leave-end="opacity-0 scale-90"
+        class="object-cover min-h-screen hero bg-[url(./assets/solo-leveling-loniyke.gif)]"
+      >
+        <div class="bg-opacity-60 hero-overlay"></div>
+
+        <div class="text-center hero-content text-neutral-content">
+          <div class="max-w-md">
+            <h1
+              id="greetings"
+              class="mb-5 text-5xl text-[#eef5db] font-bold !uppercase"
+            ></h1>
+            <button
+              @click="open1 = !open1, open2=!open2"
+              class="btn btn-wide border-none bg-[#4f6367] hover:bg-gray-700 text-xl text-[#eef5db] hover:shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]"
+            >
+              YES!!
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- end of the pre-introduction -->
+
+      <!-- This is the introduction element -->
+      <div
+        x-cloak
+        x-show="open2"
+        x-transition:enter="transition ease-out duration-300"
+        x-transition:enter-start="opacity-0 scale-90"
+        x-transition:enter-end="opacity-100 scale-100"
+        x-transition:leave="transition ease-in duration-300"
+        x-transition:leave-start="opacity-100 scale-100"
+        x-transition:leave-end="opacity-0 scale-90"
+        class="object-contain min-h-screen hero bg-[url(./assets/yuji-itadori-suku.gif)] sm:bg-[url(./assets/ryomen-sukuna-king-of-curses.gif)]"
+      >
+        <div class="bg-opacity-60 hero-overlay"></div>
+
+        <div class="text-center hero-content text-neutral-content">
+          <div class="max-w-md">
+            <h1 id="welcome" class="mb-5 text-5xl font-bold !uppercase"></h1>
+            <button
+              @click="open2 = ! open2, openMain = ! openMain"
+              class="btn btn-wide border-none bg-[#4f6367] hover:bg-gray-700 text-xl text-[#eef5db] hover:shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)]"
+            >
+              ARISE
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- end of the introduction -->
+    </section>
+
+    <!-- This is the main landing page -->
+    <main
+      x-cloak
+      x-show="openMain"
+      x-transition:enter="transition ease-out duration-300"
+      x-transition:enter-start="opacity-0 scale-90"
+      x-transition:enter-end="opacity-100 scale-100"
+      x-transition:leave="transition ease-in duration-300"
+      x-transition:leave-start="opacity-100 scale-100"
+      x-transition:leave-end="opacity-0 scale-90"
+    >
+      <div
+        x-data="{ members: [
+        { link: 'https://w0.peakpx.com/wallpaper/10/388/HD-wallpaper-gojo-satoru-jjk-jujutsu-anime-husbando-gojo-satoru-jujutsu-kaisen-thumbnail.jpg', description: 'Gojo Satoru' },
+        { link: 'https://w0.peakpx.com/wallpaper/715/727/HD-wallpaper-yuji-itadori-jjk-anime-thumbnail.jpg', description: 'Yuji Itadori' },
+        { link: 'https://w0.peakpx.com/wallpaper/493/161/HD-wallpaper-gojo-gojo-satoru-jujutsu-kaisen-jjk-jjk-thumbnail.jpg', description: 'Gojo Gojo' },
+        { link: 'https://w0.peakpx.com/wallpaper/89/326/HD-wallpaper-sung-jin-woo-sololeveling-sung-jin-woo-thumbnail.jpg', description: 'Sung Jin Woo' },
+        { link: 'https://w0.peakpx.com/wallpaper/685/696/HD-wallpaper-sung-jin-woo-digital-manhwa-webtoon-sl-solo-hearts-sololeveling-thumbnail.jpg', description: 'Solo Leveling' },
+        { link: 'https://w0.peakpx.com/wallpaper/239/853/HD-wallpaper-my-hero-academia-anime-bakugo-deku-fight-japan-my-hero-academia-thumbnail.jpg', description: 'Bakugo Deku' },
+        { link: 'https://w0.peakpx.com/wallpaper/532/619/HD-wallpaper-dabi-my-hero-academia-thumbnail.jpg', description: 'Dabi Anime' },
+        { link: 'https://w0.peakpx.com/wallpaper/126/956/HD-wallpaper-deku-artist-stapizz-deku-317-my-hero-academia-thumbnail.jpg', description: 'Deku Artist' },
+        { link: 'https://w0.peakpx.com/wallpaper/79/291/HD-wallpaper-my-hero-academia-uraraka-deku-lemollion-boku-no-hero-academia-mha-krishmia-manga-bnha-my-hero-academia-anime-thumbnail.jpg', description: 'Uraraka Deku' },
+        { link: 'https://w0.peakpx.com/wallpaper/970/979/HD-wallpaper-my-hero-academia-deku-mha-thumbnail.jpg', description: 'Deku MHA' },
+        { link: 'https://w0.peakpx.com/wallpaper/928/744/HD-wallpaper-bakugo-art-my-hero-academia-anime-bakugou-thumbnail.jpg', description: 'Bakugo Art' },
+        { link: 'https://w0.peakpx.com/wallpaper/417/882/HD-wallpaper-himiko-toga-my-hero-academia-thumbnail.jpg', description: 'Himiko Toga' },
+        { link: 'https://w0.peakpx.com/wallpaper/207/593/HD-wallpaper-all-migth-academia-anime-boku-deku-hero-my-no-thumbnail.jpg', description: 'All Might' },
+        { link: 'https://w0.peakpx.com/wallpaper/531/871/HD-wallpaper-ryomen-sukuna-domain-expansion-art-fictional-character-cool-wallaper-fanart-iphone-anime-gojo-satoru-jujutsu-kaisen-android-thumbnail.jpg', description: 'Ryomen Sukuna' },
+        { link: 'https://w0.peakpx.com/wallpaper/782/853/HD-wallpaper-domain-expansion-bl-anime-black-and-white-gojo-gojo-satori-gojo-sensei-jujutsu-kaisen-simp-thumbnail.jpg', description: 'Domain Expansion' },
+        { link: 'https://w0.peakpx.com/wallpaper/878/103/HD-wallpaper-attack-on-titan-aot-attack-on-titan-eren-thumbnail.jpg', description: 'Attack on Titan' },
+        { link: 'https://w0.peakpx.com/wallpaper/483/153/HD-wallpaper-armored-and-attack-t-attack-titan-armored-titan-thumbnail.jpg', description: 'Armored Titan' },
+        { link: 'https://w0.peakpx.com/wallpaper/338/215/HD-wallpaper-eren-aot-attack-on-titan-thumbnail.jpg', description: 'Eren Yeager' },
+        { link: 'https://w0.peakpx.com/wallpaper/633/540/HD-wallpaper-attack-on-titans-aot-armin-attack-titan-colossal-titan-eren-yeager-levi-mikasa-thumbnail.jpg', description: 'Armin Attack' },
+        { link: 'https://w0.peakpx.com/wallpaper/524/963/HD-wallpaper-levi-ackerman-attack-on-titan-thumbnail.jpg', description: 'Levi Ackerman' },
+        { link: 'https://w0.peakpx.com/wallpaper/599/734/HD-wallpaper-one-piece-one-piece-anime-thumbnail.jpg', description: 'One Piece' },
+        { link: 'https://w0.peakpx.com/wallpaper/496/428/HD-wallpaper-one-piece-luffy-anime-monkey-d-luffy-one-piece-thumbnail.jpg', description: 'Luffy Monkey' },
+        { link: 'https://w0.peakpx.com/wallpaper/229/806/HD-wallpaper-one-piece-gear-5-one-piece-monkey-d-luffy-thumbnail.jpg', description: 'Gear 5 Luffy' },
+        { link: 'https://w0.peakpx.com/wallpaper/399/672/HD-wallpaper-one-piece-zoro-anime-one-piece-zoro-thumbnail.jpg', description: 'One Piece Zoro' },
+        { link: 'https://w0.peakpx.com/wallpaper/90/737/HD-wallpaper-roronoa-zoro-hypebeast-katana-zoro-one-piece-one-piece-fanart-one-piece-samurai-anime-luffy-one-piece-zoro-fanart-thumbnail.jpg', description: 'Roronoa Zoro' },
+        { link: 'https://w0.peakpx.com/wallpaper/406/172/HD-wallpaper-luffy-one-piece-thumbnail.jpg', description: 'Luffy Anime' }
+    ] }"
+        class="gap-4 p-4 space-y-4 columns-2 md:columns-3 lg:columns-4 jos"
+        data-jos_animation="zoom-out-right"
+      >
+        <template x-for="(member, index) in members" :key="index">
+          <div class="relative overflow-hidden rounded-md cursor-pointer group">
+            <img :src="member.link" alt="Anime Photo" />
+            <div
+              class="absolute inset-0 transition duration-300 opacity-0 group-hover:opacity-100"
+            >
+              <div
+                class="absolute inset-0 bg-black pointer-events-none opacity-30"
+              ></div>
+              <div class="absolute inset-0 flex flex-col p-8">
+                <button
+                  class="px-8 py-2 mr-auto text-sm font-bold text-white bg-red-500 rounded-full"
+                >
+                  Share
+                </button>
+                <div
+                  class="relative z-10 mt-auto text-lg font-semibold text-white break-words"
+                  x-text="member.description"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+    </main>
+
+    <!-- Some javascript -->
+
+    <script>
+      // The typing animation for the greeting
+      new TypeIt("#greetings", {
+        lifeLike: true,
+        speed: 50,
+        waitUntilVisible: true,
+      })
+        .delete(18, { instant: true })
+        .type("D")
+        .pause(70)
+        .type("o")
+        .pause(70)
+        .type(" ")
+        .pause(80)
+        .type("y")
+        .pause(80)
+        .type("o")
+        .pause(80)
+        .type("u")
+        .pause(80)
+        .type(" ")
+        .pause(85)
+        .type("l")
+        .pause(85)
+        .type("o")
+        .pause(85)
+        .type("v")
+        .pause(85)
+        .type("e")
+        .pause(85)
+        .type(" ")
+        .pause(85)
+        .type("a")
+        .pause(90)
+        .type("s")
+        .pause(90)
+        .type("m")
+        .pause(90)
+        .type("i")
+        .pause(90)
+        .type("m")
+        .pause(90)
+        .type("e")
+        .pause(90)
+        .delete(1)
+        .pause(80)
+        .delete(1)
+        .pause(80)
+        .delete(1)
+        .pause(80)
+        .delete(1)
+        .pause(80)
+        .delete(1)
+        .pause(80)
+        .type("n")
+        .pause(70)
+        .type("i")
+        .pause(70)
+        .type("m")
+        .pause(70)
+        .type("e")
+        .pause(60)
+        .type("?")
+        .go();
+      // it ends here tho
+
+      // Another typing animation for the welcome id
+      new TypeIt("#welcome", {
+        lifeLike: true,
+        speed: 180,
+        waitUntilVisible: true,
+      })
+        .delete(18, { instant: true })
+        .type("W")
+        .type("e")
+        .type("l")
+        .type("c")
+        .type("o")
+        .type("m")
+        .type("e")
+        .type(" ")
+        .break()
+        .type("T")
+        .type("o")
+        .delete(1)
+        .delete(1)
+        .delete(1)
+        .delete(1)
+        .delete(1)
+        .delete(1)
+        .delete(1)
+        .delete(1)
+        .delete(1)
+        .delete(1)
+        .delete(1)
+        .type("t")
+        .type("h")
+        .type("e")
+        .type(" ")
+        .type("u")
+        .type("c")
+        .type("h")
+        .type("i")
+        .type("h")
+        .type("a")
+        .type("s")
+        .type(" ")
+        .delete(1)
+        .delete(1)
+        .type(" ")
+        .type("c")
+        .type("l")
+        .type("a")
+        .type("n")
+        .go();
+
+      // end is here
+    </script>
+
+    <!-- end of javascript -->
+  </body>
+  <script src="https://unpkg.com/jos-animation/dist/jos.min.js"></script>
+
+  <!-- New & updated tag below -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jos-animation/0.9.2/jos.js" integrity="sha512-ZbNmgrMmWwQspNz6WQ1HnqLEPMXE4PyJBVnuc10e4gwJhrycze2IzjDQPx4CxkOBnUyt5wNCekdeTRJOe8J4WA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+  <script>
+    JOS.init({
+      animation: "grow",
+      duration: 1.25,
+      // rootMargin: "10% 0% 40% 0%",
+    });
+  </script>
+</html>
